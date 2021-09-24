@@ -2,8 +2,8 @@ const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
 
 function getDeliveries() {
     let response = 'Oops something went wrong';
-    let deliveryDay = parseInt(document.getElementById('delivery').value) || -1;
-    let lag = parseInt(document.getElementById('lag').value) || -1;
+    let deliveryDay = parseInt(document.getElementById('delivery').value);
+    let lag = parseInt(document.getElementById('lag').value);
     document.getElementById('delivery').value = '';
     document.getElementById('lag').value = '';
     if(deliveryDay < 7 && deliveryDay >= 0 && lag > 0) {
