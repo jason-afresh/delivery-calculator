@@ -6,7 +6,7 @@ function getDeliveries() {
     let lag = document.getElementById('lag').value || -1;
     document.getElementById('delivery').value = '';
     document.getElementById('lag').value = '';
-    if(deliveryDay < 7 && deliveryDay > 0 && lag > 0) {
+    if(deliveryDay < 7 && deliveryDay >= 0 && lag > 0) {
         let delivery = days[deliveryDay];
         let order;
         if(lag >= 7) {
